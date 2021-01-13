@@ -44,6 +44,18 @@ export interface JWTDecryptGetKey extends GetKeyFunction<JWEHeaderParameters, Fl
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { jwtDecrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { jwtDecrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const jwt = 'eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..KVcNLqK-3-8ZkYIC.xSwF4VxO0kUMUD2W-cifsNUxnr-swyBq-nADBptyt6y9n79-iNc5b0AALJpRwc0wwDkJw8hNOMjApNUTMsK9b-asToZ3DXFMvwfJ6n1aWefvd7RsoZ2LInWFfVAuttJDzoGB.uuexQoWHwrLMEYRElT8pBQ'
  * const secretKey = Uint8Array.from([

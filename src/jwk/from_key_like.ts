@@ -21,6 +21,18 @@ import asJWK from '../runtime/key_to_jwk.js'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { fromKeyLike } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { fromKeyLike } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const privateJwk = fromKeyLike(privateKey)
  * const publicJwk = fromKeyLike(publicKey)

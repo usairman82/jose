@@ -39,6 +39,18 @@ const checkExtensions = validateCrit.bind(undefined, JWEInvalid, new Map())
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { FlattenedEncrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { FlattenedEncrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

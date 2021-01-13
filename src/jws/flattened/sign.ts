@@ -29,6 +29,18 @@ const checkExtensions = validateCrit.bind(undefined, JWSInvalid, new Map([['b64'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { FlattenedSign } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { FlattenedSign } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

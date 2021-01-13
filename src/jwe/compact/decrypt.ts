@@ -37,6 +37,18 @@ export interface CompactDecryptGetKey extends GetKeyFunction<JWEHeaderParameters
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { compactDecrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { compactDecrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

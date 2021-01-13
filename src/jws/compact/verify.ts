@@ -38,6 +38,18 @@ export interface CompactVerifyGetKey
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { compactVerify } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { compactVerify } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

@@ -18,6 +18,18 @@ import type { KeyLike } from '../types.d'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { generateSecret } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { generateSecret } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const secret = await generateSecret('HS256')
  * console.log(secret)

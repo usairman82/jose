@@ -39,6 +39,18 @@ export interface GeneralVerifyGetKey
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { generalVerify } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { generalVerify } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

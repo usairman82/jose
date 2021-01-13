@@ -49,6 +49,18 @@ export interface FlattenedVerifyGetKey
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { flattenedVerify } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { flattenedVerify } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

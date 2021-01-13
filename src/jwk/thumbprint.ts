@@ -34,6 +34,18 @@ const check = (value: any, description: string) => {
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { calculateThumbprint } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { calculateThumbprint } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const thumbprint = await calculateThumbprint({
  *   kty: 'RSA',

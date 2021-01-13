@@ -38,6 +38,18 @@ export interface GeneralDecryptGetKey extends GetKeyFunction<JWEHeaderParameters
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { generalDecrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { generalDecrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

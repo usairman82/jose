@@ -80,6 +80,18 @@ class IndividualSignature implements Signature {
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { GeneralSign } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { GeneralSign } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

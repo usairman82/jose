@@ -1,6 +1,6 @@
 {
   "name": "jose",
-  "version": "3.5.1",
+  "version": "3.5.1-experimental",
   "description": "Universal 'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK with no dependencies",
   "keywords": [
     "browser",
@@ -55,7 +55,15 @@
       "require": "./dist/node/webcrypto/cjs/*.js"
     }
   },
+  "main": "./dist/node/cjs/index.js",
+  "module": "./dist/node/esm/index.js",
+  "browser": "./dist/browser/index.js",
   "exports": {
+    ".": {
+      "browser": "./dist/browser/index.js",
+      "import": "./dist/node/esm/index.js",
+      "require": "./dist/node/cjs/index.js"
+    },
     "./jwe/compact/decrypt": {
       "browser": "./dist/browser/jwe/compact/decrypt.js",
       "import": "./dist/node/esm/jwe/compact/decrypt.js",

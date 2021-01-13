@@ -24,6 +24,18 @@ import ProduceJWT from '../lib/jwt_producer.js'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { UnsecuredJWT } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { UnsecuredJWT } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // encoding
  *
  * const unsecuredJwt = new UnsecuredJWT({ 'urn:example:claim': true })

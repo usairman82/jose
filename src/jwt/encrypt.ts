@@ -28,6 +28,18 @@ import ProduceJWT from '../lib/jwt_producer.js'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { EncryptJWT } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { EncryptJWT } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const secretKey = Uint8Array.from([
  *   206, 203, 53, 165, 235, 214, 153, 188,

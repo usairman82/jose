@@ -20,6 +20,18 @@ import type { JWSHeaderParameters, KeyLike, SignOptions } from '../../types.d'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { CompactSign } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { CompactSign } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

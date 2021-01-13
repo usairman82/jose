@@ -24,6 +24,18 @@ export type ProtectedHeaderParameters = JWSHeaderParameters & JWEHeaderParameter
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { decodeProtectedHeader } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { decodeProtectedHeader } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const protectedHeader = decodeProtectedHeader(token)
  * console.log(protectedHeader)

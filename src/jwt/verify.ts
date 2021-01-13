@@ -44,6 +44,18 @@ export interface JWTVerifyGetKey extends GetKeyFunction<JWSHeaderParameters, Fla
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { jwtVerify } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { jwtVerify } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

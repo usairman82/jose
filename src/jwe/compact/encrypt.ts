@@ -23,6 +23,18 @@ import type {
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { CompactEncrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { CompactEncrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

@@ -26,6 +26,18 @@ import { JWSInvalid } from '../util/errors.js'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { EmbeddedJWK } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { EmbeddedJWK } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import jwtVerify from 'jose/jwt/verify'
  *

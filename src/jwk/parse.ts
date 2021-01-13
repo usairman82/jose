@@ -30,6 +30,18 @@ import type { JWK, KeyLike } from '../types.d'
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { parseJwk } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { parseJwk } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const ecPrivateKey = await parseJwk({
  *   alg: 'ES256',

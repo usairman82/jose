@@ -35,6 +35,18 @@ export interface GenerateKeyPairOptions {
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { generateKeyPair } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { generateKeyPair } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * const { publicKey, privateKey } = await generateKeyPair('PS256')
  * console.log(publicKey)

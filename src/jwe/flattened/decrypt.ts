@@ -54,6 +54,18 @@ export interface FlattenedDecryptGetKey
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { flattenedDecrypt } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { flattenedDecrypt } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import parseJwk from 'jose/jwk/parse'
  *

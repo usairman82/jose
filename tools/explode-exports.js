@@ -11,20 +11,34 @@ const modules = [
   "src/util",
 ];
 
-const all = modules.map((path) => glob.sync(`${path}/**/*.ts`)).flat(Infinity);
+const all = ['src/index.ts'].concat(modules.map((path) => glob.sync(`${path}/**/*.ts`)).flat(Infinity))
 
 const exp = all.reduce((acc, mod) => {
   const len = mod.length;
   const foo = mod.substring(4, len - 3);
-  acc["./" + foo] = {
+
+  const subpaths = {}
+
+  if (foo === 'index') {
+    subpaths.stable = '.'
+  } else {
+    subpaths.stable = `./${foo}`
+    subpaths.webcrypto = `./webcrypto/${foo}`
+  }
+
+  acc[subpaths.stable] = {
     browser: "./dist/browser/" + foo + ".js",
     import: "./dist/node/esm/" + foo + ".js",
     require: "./dist/node/cjs/" + foo + ".js",
   };
-  acc["./webcrypto/" + foo] = {
-    import: "./dist/node/webcrypto/esm/" + foo + ".js",
-    require: "./dist/node/webcrypto/cjs/" + foo + ".js",
-  };
+
+  if (subpaths.webcrypto) {
+    acc[subpaths.webcrypto] = {
+      import: "./dist/node/webcrypto/esm/" + foo + ".js",
+      require: "./dist/node/webcrypto/cjs/" + foo + ".js",
+    };
+  }
+
   return acc;
 }, {});
 

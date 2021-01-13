@@ -226,6 +226,18 @@ class RemoteJWKSet {
  *
  * @example
  * ```
+ * // CJS import without loader/runtime support for subpath exports
+ * const { createRemoteJWKSet } = require('jose')
+ * ```
+ *
+ * @example
+ * ```
+ * // ESM import without loader/runtime support for subpath exports
+ * import { createRemoteJWKSet } from 'jose'
+ * ```
+ *
+ * @example
+ * ```
  * // usage
  * import jwtVerify from 'jose/jwt/verify'
  *
